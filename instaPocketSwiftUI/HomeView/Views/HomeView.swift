@@ -100,7 +100,6 @@ struct HomeView: View {
                                         .stroke(Color.white, lineWidth: 2)
                                 )
                         }
-                        //                    .offset(y: buttonOffset)
                         
                         Spacer()
                     }
@@ -133,7 +132,6 @@ struct HomeView: View {
                             }
                         }
                         .frame(maxWidth: .infinity)
-                        //                    .offset(y: buttonOffset)
                         
                         Spacer(minLength: 100)
                         
@@ -157,13 +155,11 @@ struct HomeView: View {
                             }
                         }
                         .frame(maxWidth: .infinity)
-                        //                    .offset(y: buttonOffset)
                         
                         Spacer()
                     }
                 }
             }
-            .frame(width: .infinity, height: .infinity, alignment: .center)
         }
     }
 }
