@@ -19,7 +19,7 @@ struct HomeCollectionView: View {
             GeometryReader { position in
                 Color.clear
                     .onAppear {
-                        lastOffset = position.frame(in: .global).minY + 70
+                        lastOffset = position.frame(in: .global).minY + 80
                     }
                     .onChange(of: position.frame(in: .global).minY) { newValue, oldValue in
                         currentOffset = newValue

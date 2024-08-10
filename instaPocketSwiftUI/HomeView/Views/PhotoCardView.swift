@@ -21,6 +21,18 @@ struct PhotoCardView: View {
                 .frame(width: size, height: size)
                 .cornerRadius(30)
                 .clipped()
+                LinearGradient(colors: [
+                    .black.opacity(0.5),
+                    .black.opacity(0.5),
+                    .black.opacity(0.4),
+                    .black.opacity(0.3),
+                    .black.opacity(0.2),
+                    .black.opacity(0.1),
+                    .black.opacity(0.1),
+                    .black.opacity(0.5),
+                ], startPoint: .bottom, endPoint: .top)
+                .frame(width: size, height: size)
+                .clipShape(.rect(cornerRadius: 30))
             VStack(spacing: 149) {
                 HStack {
                     Spacer()
